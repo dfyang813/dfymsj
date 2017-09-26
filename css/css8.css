@@ -1,0 +1,376 @@
+body{
+    background:#f5f5f5;
+}
+#sec-main{
+    width:990px;
+    margin:30px auto;
+}
+#banner{
+    width:990px;
+    height:330px;
+    position: relative;
+    overflow: hidden;
+}
+#banner-top{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#banner-top>li{
+    float: left;
+}
+#banner-top>li img{
+    width:990px;
+    height:330px;
+}
+#roud{
+    position:absolute;
+    left:50%;
+    bottom:10px;
+    margin-left:-30px;
+    z-index: 10;
+}
+#roud>li{
+    float: left;
+    margin-right:10px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background:#83949c;
+}
+#roud .active{
+    background:#ff4c35;
+}
+#ban-bto{
+    background:#fff;
+    height:140px;
+    margin-top:40px;
+    overflow: visible;
+}
+#ban-bto>li{
+    float:left;
+    width:90px;
+    height:140px;
+    border-right:1px solid #f5f5f5;
+    box-sizing: border-box;
+    position:relative;
+
+}
+#ban-bto>li>div{
+    width:90px;
+    height:140px;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: all .2s linear;
+}
+#ban-bto>li>.active{
+    height:160px;
+    top:-10px;
+}
+#ban-bto>li>a{
+    display:block;
+    width:62px;
+    margin:15px auto;
+    position: relative;
+    z-index: 2;
+}
+#ban-bto>li>a>img{
+    width:66px;
+    height:66px;
+    border-radius: 50%;
+}
+#ban-bto>li>button{
+    display:block;
+    line-height:24px;
+    font-size:12px;
+    color:#fff;
+    margin:0 auto;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+#ban-bto>li>.bt1{
+    width:52px;
+    background:#ff7c7c;
+}
+#ban-bto>li>.bt2{
+    width:52px;
+    background:#ff4233;
+}
+#ban-bto>li>.bt3{
+    width:40px;
+    background:#ffc533;
+}
+#ban-bto>li>.bt4{
+    width:40px;
+    background:#77bf2e;
+}
+#ban-bto>li>.bt5{
+    width:40px;
+    background:#39c45d;
+}
+#ban-bto>li>.bt6{
+     width:52px;
+     background:#33ddaf;
+ }
+#ban-bto>li>.bt7{
+    width:40px;
+    background:#33d9fd;
+}
+#ban-bto>li>.bt8{
+    width:40px;
+    background:#3357b5;
+}
+#ban-bto>li>.bt9{
+    width:40px;
+    background:#6933ab;
+}
+#ban-bto>li>.bt10{
+    width:52px;
+    background:#b933be;
+}
+#ban-bto>li>.bt11{
+    width:52px;
+    background:#fa74dd;
+}
+h1{
+    font-size:22px;
+    text-align: center;
+    line-height:82px;
+    color:#333333;
+    margin-top:20px;
+    font-weight: bold;
+}
+#main-list>li{
+    float:left;
+    margin-right:15px;
+    margin-bottom:20px;
+    border:1px solid #fff;
+    box-sizing: border-box;
+    background:#fff;
+    transition: all .2s linear;
+}
+#main-list>.activ{
+    box-shadow: 1px 3px 6px #aaa;
+}
+#main-list>li>a>img{
+    width:318px;
+}
+.main-bto{
+    padding:20px;
+    width:278px;
+    background:#fff;
+}
+.main-bto>h2>a{
+    font-size:16px;
+    color:#333333;
+}
+.main-bto>h2>a:hover{
+    color:#ff4c35;
+    text-decoration: underline;
+}
+.main-bto>p{
+    font-size:12px;
+    color:#999999;
+    line-height:32px;
+}
+.main-bto>a{
+    font-size:12px;
+    color:#ff4c35;
+}
+.hot{
+    float:left;
+}
+.hottop{
+    background:#fff;
+    padding:20px 20px 0 20px;
+    height:250px;
+    overflow: hidden;
+    position:relative;
+}
+.hottop>a{
+    display: block;
+    width:445px;
+    overflow: hidden;
+}
+.hottop>a>img{
+    width:445px;
+    transition:width .3s linear;
+}
+.hottop>a>.acte{
+    width:460px;
+}
+.hottop>p>a{
+    color:#fff;
+    font-weight:bold;
+    font-size:24px;
+    position:absolute;
+    bottom:15px;
+    left:40px;
+}
+.hotbto{
+    background:#fff;
+    margin-top:10px;
+    padding:0 20px 20px 20px;
+}
+.hotbto>li{
+    width:141px;
+    height:79px;
+    float:left;
+    margin-right:10px;
+    overflow: hidden;
+}
+.hotbto>li>a>img{
+    width:141px;
+    transition: width .3s linear;
+}
+.hotbto>li>a>.acti{
+    width:156px;
+}
+.sup-left{
+    width:330px;
+    margin-right:20px;
+    background:#fff;
+    float: left;
+}
+.sup-left>h2{
+    font-size:16px;
+    line-height:60px;
+    color:#333333;
+    padding-left:20px;
+}
+.lf-bto{
+    padding-left:20px;
+    border-top:1px solid #f5f5f5;
+    padding-bottom:20px;
+}
+.lf-bto>li{
+    margin-top:15px;
+}
+.lf-bto>li>a>img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.intro{
+    margin-left:15px;
+}
+.intro>a{
+    font-size:14px;
+    color:#333333;
+    line-height:26px;
+}
+.intro>p{
+    color:#999999;
+    font-size:12px;
+}
+.lf-bto>li>button{
+    background:#ff4c35;
+    color:#fff;
+    font-size:12px;
+    padding:6px 8px;
+    float:right;
+    border-radius: 4px;
+    margin-right:20px;
+    margin-top:10px;
+}
+.sup-rt{
+    width:290px;
+    background:#fff;
+    height:471px;
+}
+.sup-rt>img{
+    margin-top:58px;
+    margin-bottom:40px;
+    margin-left:40px;
+}
+.sup-rt>p{
+    font-size:12px;
+    color:#666666;
+    line-height:24px;
+    width:210px;
+    margin:0 auto;
+}
+.sup-rt>button{
+    width:160px;
+    font-size:16px;
+    color:#fff;
+    line-height:44px;
+    margin:0 auto;
+    background:#ff4c35;
+    border-radius: 5px;
+    display:block;
+    margin-top:60px;
+}
+#task{
+    background:#fff;
+}
+#task>li{
+    padding:20px;
+    border-bottom:1px dotted #ccc;
+}
+#task>li>div>img{
+    width:124px;
+    border-radius: 3px;
+    height:70px;
+}
+#task>li>div>button{
+    color:#fff;
+    font-size:12px;
+    line-height:24px;
+    padding:0 8px;
+    background:#ff7c7c;
+    border-radius: 4px;
+    margin-top:10px;
+}
+#task>li>.task-mid{
+    margin-left:20px;
+}
+#task>li>.task-mid>a{
+    font-size:16px;
+    padding-left:10px;
+    color:#333333;
+}
+#task>li>.task-mid>p{
+    font-size:12px;
+    color:#999999;
+    margin-top:10px;
+}
+#task>li>.task-mid>p>span{
+    color:#333333;
+}
+#task>li>button{
+    width:86px;
+    height:36px;
+    color:#fff;
+    font-size:12px;
+    line-height:36px;
+    float: right;
+    border-radius:2px;
+    margin-top:15px;
+}
+#main-box{
+    width:1005px;
+    margin:0 auto;
+}
+#main-box>li{
+    float:left;
+    margin-right:15px;
+    margin-bottom:20px;
+    border:1px solid #fff;
+    box-sizing: border-box;
+    background:#fff;
+    transition: all .2s linear;
+}
+#main-box>li:hover{
+    box-shadow: 1px 3px 6px #aaa;
+}
+#main-box>li>a>img{
+    width:318px;
+}
+
+
+
+

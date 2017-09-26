@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/com.css"/>
+    <link rel="stylesheet" href="css/css8.css"/>
+    <script src="js/angular.js"></script>
+</head>
+<body ng-controller="myCtrl">
+
+<div id="header"></div>
+<nav id="nav">
+    <ul id="nav-list">
+        <li><a href="index.html">首页</a></li>
+        <li id="sec">
+            <a href="sceond.html">菜谱大全</a>
+            <b></b>
+            <div id="nav-all" class="table">
+                <h6><a href="#">家常菜谱</a></h6>
+                <ul>
+                    <li><a href="#">家常菜</a></li>
+                    <li><a href="#">凉菜</a></li>
+                    <li><a href="#">素食</a></li>
+                    <li><a href="#">晚餐</a></li>
+                    <li><a href="#">私家菜</a></li>
+                    <li><a href="#">热菜</a></li>
+                    <li><a href="#">海鲜</a></li>
+                    <li><a href="#">孕妇</a></li>
+                    <li><a href="#">早餐</a></li>
+                    <li><a href="#">午餐</a></li>
+                    <li><a href="#">甜品点心</a></li>
+                    <li><a href="#">汤粥</a></li>
+                    <li><a href="#">宝宝食谱婴儿食谱</a></li>
+                    <li><a href="#">糕点主食</a></li>
+                    <li><a href="#">微波炉</a></li>
+                </ul>
+                <div class="clear">
+                    <div class="lf nav-lf">
+                        <h6><a href="#">中华菜系</a></h6>
+                        <ul>
+                            <li><a href="">川菜</a></li>
+                            <li><a href="">粤菜</a></li>
+                            <li><a href="">东北菜</a></li>
+                            <li><a href="">湘菜</a></li>
+                            <li><a href="">鲁菜</a></li>
+                            <li><a href="">湖北菜</a></li>
+                            <li><a href="">浙菜</a></li>
+                            <li><a href="">清真菜</a></li>
+                        </ul>
+                        <h6><a href="#">外国菜谱</a></h6>
+                        <ul>
+                            <li><a href="#">韩国料理</a></li>
+                            <li><a href="#">日本料理</a></li>
+                            <li><a href="#">法国菜</a></li>
+                            <li><a href="#">意大利餐</a></li>
+                        </ul>
+                        <h6><a href="#">厨房百科</a></h6>
+                        <ul>
+                            <li><a href="#">摆盘围边</a></li>
+                            <li><a href="#">烹饪技巧</a></li>
+                            <li><a href="#">生活妙招</a></li>
+                            <li><a href="#">美食专题</a></li>
+                        </ul>
+                    </div>
+                    <div class="lf nav-lf">
+                        <h6><a href="#">各地小吃</a></h6>
+                        <ul>
+                            <li><a href="#">四川小吃</a></li>
+                            <li><a href="#">广东小吃</a></li>
+                            <li><a href="#">北京小吃</a></li>
+                            <li><a href="#">陕西小吃</a></li>
+                        </ul>
+                        <h6><a href="#">烘焙</a></h6>
+                        <ul>
+                            <li><a href="#">蛋糕面包</a></li>
+                            <li><a href="#">饼干配方</a></li>
+                            <li><a href="#">甜品点心</a></li>
+                        </ul>
+                        <h6><a href="#">食材百科</a></h6>
+                        <ul>
+                            <li><a href="#">蔬菜</a></li>
+                            <li><a href="#">水果</a></li>
+                            <li><a href="#">谷类</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <b><img src="img/xie.png" alt=""/></b>
+            </div>
+        </li>
+        <li id="tre">
+            <a href="third.html">饮食健康</a>
+            <b></b>
+            <div id="nav-btm" class="table">
+                <h6><a href="#">饮食健康</a></h6>
+                <ul>
+                    <li><a href="#">饮食小常识</a></li>
+                    <li><a href="#">美容瘦身</a></li>
+                    <li><a href="#">食品安全</a></li>
+                    <li><a href="#">养生妙方</a></li>
+                    <li><a href="#">饮食禁忌</a></li>
+                    <li><a href="#">中医保健</a></li>
+                    <li><a href="#">母婴健康饮食</a></li>
+                    <li><a href="#">饮食新闻</a></li>
+                </ul>
+                <h6><a href="#">功能性调理</a></h6>
+                <ul>
+                    <li><a href="">清热去火</a></li>
+                    <li><a href="">减肥</a></li>
+                    <li><a href="">祛痰</a></li>
+                    <li><a href="">滋阴补肾</a></li>
+                    <li><a href="">健脾开胃</a></li>
+                    <li><a href="">消化不良</a></li>
+                    <li><a href="">清热解毒</a></li>
+                    <li><a href="">补阳壮阳</a></li>
+                    <li><a href="">增肥</a></li>
+                </ul>
+                <div class="clear">
+                    <div class="lf nav-lt">
+                        <h6><a href="#">人群膳食</a></h6>
+                        <ul>
+                            <li><a href="#">孕妇</a></li>
+                            <li><a href="#">老人</a></li>
+                            <li><a href="#">产妇</a></li>
+                            <li><a href="#">哺乳期</a></li>
+                            <li><a href="#">青少年</a></li>
+                            <li><a href="#">幼儿</a></li>
+                            <li><a href="#">学龄期儿童</a></li>
+                        </ul>
+                    </div>
+                    <div class="lf nav-lt">
+                        <h6><a href="#">疾病调理</a></h6>
+                        <ul>
+                            <li><a href="#">糖尿病</a></li>
+                            <li><a href="#">高血压</a></li>
+                            <li><a href="#">痛风</a></li>
+                            <li><a href="#">胃炎</a></li>
+                            <li><a href="#">痔疮</a></li>
+                            <li><a href="#">更年期</a></li>
+                            <li><a href="#">甲状腺</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h6><a href="#">脏腑调理</a></h6>
+                <ul>
+                    <li><a href="#">感冒</a></li>
+                    <li><a href="#">补肾</a></li>
+                    <li><a href="#">阳痿早泄</a></li>
+                    <li><a href="#">补血</a></li>
+                    <li><a href="#">便秘</a></li>
+                    <li><a href="#">腹泻</a></li>
+                    <li><a href="#">活血化瘀</a></li>
+                </ul>
+                <b><img src="img/cong.png" alt=""/></b>
+            </div>
+        </li>
+        <li><a href="fourth.html">美食菜单</a></li>
+        <li><a href="fifth.html">家居馆</a></li>
+        <li id="delc">
+            <a  class="active" href="eight.html">美食达人</a>
+            <b></b>
+        </li>
+        <li><a href="sever.html">讨论组</a></li>
+        <li><a href="six.html">手机版下载</a></li>
+    </ul>
+</nav>
+<section id="sec-main">
+    <div id="banner">
+        <ul id="banner-top" class="clear">
+
+        </ul>
+        <ul id="roud" class="clear">
+
+        </ul>
+    </div>
+    <ul id="ban-bto" class="clear">
+        <li>
+            <a href="#"><img src="img/dtx1.png"/></a>
+            <button class="bt1">中式菜</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx2.jpg"/></a>
+            <button class="bt2">西式菜</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/d.jpg"/></a>
+            <button class="bt3">烘焙</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx4.jpg"/></a>
+            <button class="bt4">素食</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx5.png"/></a>
+            <button class="bt5">轻食</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx6.jpg"/></a>
+            <button class="bt6">一人食</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx7.png"/></a>
+            <button class="bt7">孕婴</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx8.jpg"/></a>
+            <button class="bt8">养生</button>
+            <div></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dtx9.jpg"/></a>
+            <button class="bt9">技巧</button>
+            <div></div>
+            </li>
+        <li>
+            <a href="#"><img src="img/dtx10.jpg"/></a>
+            <button class="bt10">品味家</button>
+            <div></div>
+        </li>
+        <li style="border-right:none">
+            <a href="#"><img src="img/dtx11.jpg"/></a>
+            <button class="bt11">营养师</button>
+            <div></div>
+        </li>
+    </ul>
+    <h1>内容精选</h1>
+    <ul id="main-list" class="clear">
+        <li>
+            <a href="#"><img src="img/dt1.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">把春天吃进肚子里</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">salila</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dt2.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">亲爱的，我给你煮了水果茶！！！</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">禾小何</a>
+            </div>
+        </li>
+        <li style="margin-right:0">
+            <a href="#"><img src="img/dt3.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">三鲜蛋饺</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">七九星星</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dt4.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">中西结合芝士饭团</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">我叫一尾鱼</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dt5.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">金陵四大最有人情味街头小吃...</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">老方小雨</a>
+            </div>
+        </li>
+        <li style="margin-right:0">
+            <a href="#"><img src="img/dt6.jpeg"/></a>
+            <div class="main-bto">
+                <h2><a href="#">椰蓉小酥球，快乐童年美食</a></h2>
+                <p>1624浏览·22评论·329赞</p>
+                <a href="#">羊羊羊</a>
+            </div>
+        </li>
+    </ul>
+    <div class="clear ">
+        <div class="hot">
+            <h1>大咖专栏</h1>
+            <div class="hottop">
+                <a href="#"><img src="img/hot1.jpeg"></a>
+                <p><a href="#">#一篇好喝的饮品指南#菜谱征集...</a></p>
+            </div>
+            <ul class="clear hotbto">
+                <li>
+                    <a href="#"><img src="img/hot2.jpg"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/hot3.png"/></a>
+                </li>
+                <li style="margin-right:0">
+                    <a href="#"><img src="img/hot4.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hot" style="margin-left:20px">
+            <h1>热门活动</h1>
+            <div class="hottop">
+                <a href="#"><img src="img/dt3.jpeg"></a>
+                <p><a href="#">#玉米好吃到飞起#菜谱征集获奖...</a></p>
+            </div>
+            <ul class="clear hotbto">
+                <li>
+                    <a href="#"><img src="img/hot6.jpg"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/hot7.jpg"/></a>
+                </li>
+                <li style="margin-right:0">
+                    <a href="#"><img src="img/hot8.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h1>达人榜单</h1>
+    <div id="supmen" class="clear">
+        <div class="sup-left">
+            <h2>新晋达人</h2>
+            <ul class="lf-bto">
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/tx1.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">云朵面包</a>
+                        <p>我是一个热爱美食的职场女性...</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/tx2.png"/></a>
+                    <div class="lf intro">
+                        <a href="#">会飞的黄油</a>
+                        <p>希望和更多喜爱西餐烘焙的...</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/tx5.png"/></a>
+                    <div class="lf intro">
+                        <a href="#">宝儿梧桐</a>
+                        <p>爱好美食，喜欢美食杰这个...</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx11.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">表不要</a>
+                        <p>打心底里喜欢美食，励志...</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx2.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">小辣妈</a>
+                        <p>为了帮助更多的小伙伴学...</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/tx6.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">方太生活</a>
+                        <p>方太生活家认为，烹饪是表...</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sup-left">
+            <h2>热门达人</h2>
+            <ul class="lf-bto">
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx10.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">杰答应</a>
+                        <p>本月热度 : 3345</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx4.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">美食小编</a>
+                        <p>本月热度 : 2643</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx7.png"/></a>
+                    <div class="lf intro">
+                        <a href="#">开心果子</a>
+                        <p>本月热度 : 4216</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx9.jpg"/></a>
+                    <div class="lf intro">
+                        <a href="#">dfysg</a>
+                        <p>本月热度 : 1749</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/tx3.png"/></a>
+                    <div class="lf intro">
+                        <a href="#">肥小骨</a>
+                        <p>本月热度 : 6473</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+                <li class="clear">
+                    <a href="#" class="lf"><img src="img/dtx1.png"/></a>
+                    <div class="lf intro">
+                        <a href="#">林冰儿</a>
+                        <p>本月热度 : 1423</p>
+                    </div>
+                    <button>关注</button>
+                </li>
+            </ul>
+        </div>
+        <div class="sup-rt lf">
+            <img src="img/daren.png"/>
+            <p>成为达人即可享受不一样的特权专属标识、优先推荐、
+                更高的家居馆折扣...想要施展才华、展现魅力的你 , 快来申请成为美食达人吧！</p>
+            <button>申请达人</button>
+        </div>
+    </div>
+    <div id="sup-task">
+        <h1>达人任务</h1>
+        <ul id="task">
+            <li class="clear">
+                <div class="lf"><img src="img/task1.png"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">霸王超市|北海野生青口贝干</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>已过期</button>
+            </li>
+            <li class="clear">
+                <div class="lf"><img src="img/task2.jpg"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">多变好吃的寿司</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>领取任务</button>
+            </li>
+            <li class="clear">
+                <div class="lf"><img src="img/task3.png"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">超级好吃的炒肉</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>已过期</button>
+            </li>
+            <li class="clear">
+                <div class="lf"><img src="img/task4.jpg"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">好吃不胖</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>名额已满</button>
+            </li>
+            <li class="clear">
+                <div class="lf"><img src="img/task5.png"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">新鲜的瘦肉，价优</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>已过期</button>
+            </li>
+            <li class="clear">
+                <div class="lf"><img src="img/task6.jpg"/></div>
+                <div class="lf task-mid">
+                    <button>中式菜</button><a href="#">正宗的酸辣粉</a>
+                    <p><span>一级任务</span> | 浏览：148 | 申请名额：50 | 申请人数：34 | 截止时间：04月22日 12:00</p>
+                </div>
+                <button>领取任务</button>
+            </li>
+        </ul>
+    </div>
+    <h1>优质内容</h1>
+    <ul id="main-box" class="clear">
+        <li ng-repeat="tmp in myList track by $index">
+            <a href="#"><img src="img/{{tmp.imgUrl}}"/></a>
+            <div class="main-bto">
+                <h2><a href="#">{{tmp.title}}</a></h2>
+                <p>{{tmp.info}}</p>
+                <a href="#">{{tmp.name}}</a>
+            </div>
+        </li>
+    </ul>
+</section>
+<div id="footer"></div>
+
+
+<script src="jQuery/jquery-1.11.3.js"></script>
+<script src="js/com.js"></script>
+<script src="js/08.js"></script>
+</body>
+</html>

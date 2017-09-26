@@ -1,0 +1,73 @@
+#simple{
+    width:990px;
+    margin:0 auto;
+}
+#simple>h1{
+    text-align:center;
+    color:#222222;
+    font-size:22px;
+    line-height:118px;
+}
+#sim-list{
+    display:flex;
+    flex-wrap: wrap;
+    background:#fff;
+}
+#sim-list>li{
+   padding:14px 24px 14px 14px;
+    width:291px;
+    display:flex;
+    border-right:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+}
+#sim-list>li>div{
+    margin-left:10px;
+}
+#sim-list>li>div>a{
+    font-size:18px;
+    font-weight:bold;
+    color:#333333;
+    line-height:38px;
+}
+#sim-list>li>div>p{
+    font-size:14px;
+}
+#sim-list>li>div>p>a {
+    color:#999999;
+}
+#see{
+    width:990px;
+    margin:0 auto;
+    margin-bottom:120px;
+}
+#see>h1{
+    text-align:center;
+    color:#222222;
+    font-size:22px;
+    line-height:118px;
+}
+#see-pto{
+    width:248px;
+    height:523px;
+    margin:0 auto;
+    background:url("../img/sjk.png") no-repeat center center;
+}
+#pto-box{
+    width:219px;
+    height:390px;
+    margin-top:65px;
+    margin-left:16px;
+    overflow: hidden;
+    position: relative;
+}
+#prots{
+    width:2200px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#prots>img{
+    width:219px;
+    height:390px;
+    float:left;
+}
